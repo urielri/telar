@@ -1,0 +1,19 @@
+{
+  "name": "@repo/vite-config",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "exports": {
+    "./general": {
+      "types": "./general.d.ts",
+      "default": "./general.js"
+    },
+    "./next": {
+      "types": "./next.d.ts",
+      "default": "./next.js"
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2"
+  }
+}
