@@ -1,0 +1,29 @@
+{
+  "name": "telar",
+  "version": "0.1.1",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "dev:web": ". ./env.sh && next dev --turbopack",
+    "build:web": "next build",
+    "test:coverage": "vitest run --coverage",
+    "test:run": "vitest --run --reporter=basic --reporter=html --outputfile=./results/index.html",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@repo/telar": "*",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@repo/eslint-config": "*",
+    "@repo/prettier-config": "*",
+    "@repo/typescript-config": "*",
+    "@repo/vite-config": "*",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.4"
+  }
+}
